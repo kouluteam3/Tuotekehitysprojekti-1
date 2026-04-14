@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FixIt - Etusivu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< Updated upstream
     <iframe src="Templates/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
 
     <iframe src="Templates/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+=======
+    <header>
+        <div class="logo"><img src="Resources/Images/HeaderLogo.png" alt="FixIt Logo" style="max-width: 100%; height: 50px;"></div>
+        <nav>
+            <ul>
+                <li><a href="Pages/palvelut.html">Palvelut</a></li>
+                <li><a href="Pages/ukk.html">UKK</a></li>
+                <li><a href="Pages/yhteystiedot.html">Yhteystiedot</a></li>
+                <li><a href="Pages/lomake.html">Lomake</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px;">
+                    <div class="hero-text">
+                        <h1>Hajosiko puhelimesi tai muu laite?</h1>
+                        <p>Korjaamme laitteesi edullisesti ja luotettavasti.</p>
+                        <div style="margin-top: 20px;">
+                            <button class="btn-cta">Varaa huolto</button>
+                            <button class="btn-cta" style="background-color: var(--dark-bg); margin-left: 10px;">Katso hinnasto</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="Resources/Images/cell-phone-smartphone-mobile-cellphone-preview.png" alt="Rikkinäinen puhelin" style="max-width: 400px; border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" style="text-align: center; padding: 60px 0;">
+            <h2 style="color: var(--light-tan); margin-bottom: 40px;">Luotettavat huollot</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="feature-item">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 10px;"><img src="Resources/Images/shield.png" alt="Shield"></div>
+                    <p><strong>Takuu 12kk</strong></p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 10px;"><img src="Resources/Images/checked.png" alt="Check"></div>
+                    <p><strong>Laadukkaat osat</strong></p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 10px;"><img src="Resources/Images/clock.png" alt="Clock"></div>
+                    <p><strong>Nopea korjaus</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="text-align: center; padding: 40px; color: var(--tan); font-size: 0.8rem;">
+        <p>&copy; 2024 FixIt Huoltopalvelut.</p>
+    </footer>
+>>>>>>> Stashed changes
 </body>
+
 </html>
