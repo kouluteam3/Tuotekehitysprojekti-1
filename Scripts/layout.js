@@ -22,8 +22,8 @@ function setActiveLink() {
 
 async function initLayout() {
     await Promise.all([
-        loadComponent('header', '/Templates/header.html'),
-        loadComponent('footer', '/Templates/footer.html')
+        loadComponent('header', 'Templates/header.html'),
+        loadComponent('footer', 'Templates/footer.html')
     ]);
 
     setActiveLink();
