@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FixIt - Etusivu</title>
+
+    <style>
+        body { visibility: hidden; }
+        body.loaded { visibility: visible; }
+    </style>
+    
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/header.css">
+
+    <script defer src="Scripts/layout.js"></script>
+
 </head>
 <body>
-    <iframe src="Templates/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <div id="header"></div></iframe>
     <main>
         <section class="hero">
             <div class="container">
@@ -44,7 +55,7 @@
             </div>
         </section>
     </main>
-    <iframe src="Templates/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <div id="footer"></div>this.remove()"></iframe>
 </body>
 
 </html>

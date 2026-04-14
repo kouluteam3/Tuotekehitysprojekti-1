@@ -1,37 +1,16 @@
-<body>
-    <link rel="stylesheet" href="../Css/main.css">
-    <link rel="stylesheet" href="../Css/header.css">
+<header>  
+    <a href="/index.html" class="logo">
+        <img src="/Resources/Images/HeaderLogo.png" alt="FixIt logo">
+    </a>
 
-    <header>
-        <a href="../index.html"><img src="../Resources/Images/HeaderLogo.png" alt="FixIt logo"></a>
+    <nav>
+        <a href="/Pages/palvelut.html">Palvelut</a>
+        <a href="/Pages/ukk.html">UKK</a>
+        <a href="/Pages/yhteystiedot.html">Yhteystiedot</a>
+        <a href="/Pages/lomake.html">Lomake</a>
+        <a href="/Pages/styleguide.html">Tyyliohje</a>
 
-        <nav>
-            
-            <a href="../Pages/palvelut.html">Palvelut</a><br>
-            <a href="../Pages/ukk.html">UKK</a><br>
-            <a href="../Pages/yhteystiedot.html">Yhteystiedot</a><br>
-            <a href="../Pages/lomake.html">Lomake</a><br>
-            <a href="../Pages/styleguide.html">Tyyliohje</a><br>
-
-            <button onclick="window.location='../Pages/lomake.html'">Varaa huolto</button>
-        </nav>
-
-    </header>
-
-    <hr>
-
-    <script>
-        const currentPage = parent.location.pathname.split('/').pop();
-        document.querySelectorAll('nav a').forEach(link => 
-        {
-            const pageLink = link.getAttribute('href').split('/').pop();
-            if (pageLink === currentPage) {
-                link.className += " active";
-
-                console.log(link.className);
-            }
-        })
-    </script>
-
-</body>
-
+        <button onclick="window.location='/Pages/lomake.html'">Varaa huolto</button>
+    </nav>
+</header>
+<hr>
