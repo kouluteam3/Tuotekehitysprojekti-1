@@ -1,4 +1,21 @@
 header {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-flow: nowrap;
+    gap: 7px;
+
+    margin: 10px;
+}
+
+header img {
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
 }
