@@ -23,14 +23,6 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: var(--accent-green);
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
 nav ul {
     list-style: none;
     display: flex;
