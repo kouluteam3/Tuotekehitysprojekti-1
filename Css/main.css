@@ -126,6 +126,14 @@ textarea {
     background-color: var(--secondary-green);
     color: var(--text-light);
     max-height: 30rem;
+    gap: 40px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .hero-text h1 {
