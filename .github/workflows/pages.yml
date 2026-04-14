@@ -1,0 +1,50 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Prepare site
+        run: |
+          mkdir -p dist
+          cp -R Css Scripts Resources Templates Pages dist/
+          cp index.html dist/index.html
+
+          # Optional: make root-absolute links work on GitHub Pages
+          # This inserts a base tag into every HTML file.
+          find dist -name '*.html' -exec sed -i '0,/<head>/s//<head>\n    <base href="\/Tuotekehitysprojekti-1\/">/' {} +
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
