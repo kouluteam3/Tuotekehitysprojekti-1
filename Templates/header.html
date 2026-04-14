@@ -1,4 +1,5 @@
 <body>
+    <link rel="stylesheet" href="../Css/main.css">
     <link rel="stylesheet" href="../Css/header.css">
 
     <header>
@@ -10,7 +11,7 @@
             <a href="../Pages/ukk.html">UKK</a><br>
             <a href="../Pages/yhteystiedot.html">Yhteystiedot</a><br>
             <a href="../Pages/lomake.html">Lomake</a><br>
-            <a href="../Pages/yhteystiedot.html">Tyyliohje</a><br>
+            <a href="../Pages/styleguide.html">Tyyliohje</a><br>
 
             <button onclick="window.location='../Pages/lomake.html'">Varaa huolto</button>
         </nav>
@@ -18,6 +19,19 @@
     </header>
 
     <hr>
+
+    <script>
+        const currentPage = parent.location.pathname.split('/').pop();
+        document.querySelectorAll('nav a').forEach(link => 
+        {
+            const pageLink = link.getAttribute('href').split('/').pop();
+            if (pageLink === currentPage) {
+                link.className += " active";
+
+                console.log(link.className);
+            }
+        })
+    </script>
 
 </body>
 

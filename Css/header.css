@@ -13,6 +13,14 @@ header nav {
     margin: 10px;
 }
 
+header nav a {
+    font-weight: normal;
+}
+
+header nav .active {
+    font-weight: bolder
+}
+
 header img {
     height: auto; 
     width: auto; 
