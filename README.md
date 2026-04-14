@@ -1,0 +1,1 @@
+This site is a software projekt for school.
