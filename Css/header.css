@@ -1,3 +1,5 @@
+@import './main.css';
+
 header {
     display: flex;
     flex-flow: nowrap;
@@ -18,7 +20,8 @@ header nav a {
 }
 
 header nav .active {
-    font-weight: bolder
+    font-weight: bolder;
+    color: var(--tan);
 }
 
 header img {
@@ -26,4 +29,9 @@ header img {
     width: auto; 
     max-width: 150px; 
     max-height: 150px;
+}
+
+footer b, footer p {
+    padding-left: 5px;
+    padding-top: 5px;
 }

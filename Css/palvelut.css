@@ -1,0 +1,24 @@
+@import './main.css';
+
+.hero2 {
+    display: flex;
+    background-color: var(--dark-bg);
+}
+
+.hero2 img {
+
+    padding: 10px;
+
+    height: 300px;
+    width: auto + 100px;
+}
+
+.container2 {
+    
+
+    padding: 10px;
+}
+
+.container2 ol {
+    padding: 20px;
+}

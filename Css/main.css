@@ -1,10 +1,10 @@
 
 :root {
-    --dark-bg: #2B4E43;
+    --dark-bg: #394648;
     --primary-green:  #6B995D;
     --secondary-green: #9AA373;
-    --tan: #CDAC8B;
-    --light_tan: #E2CB99;
+    --tan: #CBAC8B;
+    --light_tan: #E2CBB9;
     --off-white: #FBE9E9;
     --text-light: #FBE9E9;
     --accent-green: #20453B;
@@ -22,6 +22,23 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
 }
+
+h1 {
+    color: --text-light;
+}
+
+h2 {
+    color: var(--tan);
+}
+
+h3 {
+    color: var(--light_tan);
+}
+
+b {
+    color: var(--light_tan);
+}
+
 
 nav ul {
     list-style: none;
