@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    color: --text-light;
+    color: var(--text-light); 
 }
 
 h2 {
@@ -54,6 +54,10 @@ nav a {
     transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: var(--tan); 
+}
+
 button {
     background-color: var(--primary-green);
     color: var(--text-light);
@@ -63,6 +67,11 @@ button {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-2px);
 }
 
 .container {
@@ -87,6 +96,11 @@ button {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 .card h3 {
     margin-bottom: 10px;
 }
@@ -97,6 +111,7 @@ button {
     border-radius: 20px;
     max-width: 500px;
     color: var(--text-light);
+    margin: 0 auto
 }
 
 .form-group {
@@ -116,6 +131,7 @@ input, select, textarea {
 
 textarea {
     height: 120px;
+    resize: vertical
 }
 
 .faq-item {
@@ -143,7 +159,6 @@ textarea {
     background-color: var(--secondary-green);
     color: var(--text-light);
     max-height: 30rem;
-    gap: 40px;
 }
 
 .hero-content {
@@ -164,4 +179,24 @@ textarea {
     display: block;
     transform: translateY(3px);
     filter: drop-shadow(-10px 15px 15px rgba(0,0,0,0.15));
+}
+
+
+@media screen and (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-image {
+        order: 2;
+    }
+    
+    .hero {
+        padding: 3rem 0;
+    }
 }
