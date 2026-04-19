@@ -2,21 +2,48 @@
 
 /* Services page specific styles */
 
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Hero section for services page */
 .services .hero {
     background-color: var(--dark-bg);
+
+    gap: 30px;
+    padding: 30px;
+
+    flex-wrap: wrap;
+    max-height: none;
 }
 
 /* Hero text styling */
 .services .hero-text {
-    max-width: 50%;
+    flex: 2 0 450px;
+    max-width: 600px;
+    
+}
+
+.services ol {
+    margin-left: 1rem;
 }
 
 /* Hero image styling */
+.services .hero-image {
+    flex: 0 1 800px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .services .hero-image img {
-    scale: 150%;
-    border-radius: 8px;
-    margin-right: 150px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 /* Card styling for services page */
@@ -38,3 +65,4 @@
     transform: rotate(-90deg);
     margin-bottom: 10px;
 }
+
