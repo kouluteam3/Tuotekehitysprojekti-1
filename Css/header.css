@@ -9,6 +9,7 @@ header {
 
 header nav {
     display: flex;
+    align-items: center;
     flex-flow: nowrap;
     gap: 7px;
 
