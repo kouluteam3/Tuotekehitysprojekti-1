@@ -3,37 +3,37 @@
 /* Services page specific styles */
 
 /* Hero section for services page */
-.hero.services-hero {
+.services .hero {
     background-color: var(--dark-bg);
 }
 
 /* Hero text styling */
-.services-hero .hero-text {
+.services .hero-text {
     max-width: 50%;
 }
 
 /* Hero image styling */
-.services-hero .hero-image img {
+.services .hero-image img {
     scale: 150%;
     border-radius: 8px;
     margin-right: 150px;
 }
 
 /* Card styling for services page */
-.card .container {
+.services .card .container {
     background-color: var(--accent-green);
 }
 
-.card img[src*="CellPhone.png"] {
+.services .card img[src*="CellPhone.png"] {
     width: 50%;
 }
 
-.card img[src*="Laptop.png"] {
+.services .card img[src*="Laptop.png"] {
     width: 84%;
     margin-right: -20px;
 }
 
-.card img[src*="Xbox.png"] {
+.services .card img[src*="Xbox.png"] {
     width: 51%;
     transform: rotate(-90deg);
     margin-bottom: 10px;
