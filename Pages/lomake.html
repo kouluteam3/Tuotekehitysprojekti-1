@@ -19,7 +19,7 @@
         body.loaded { visibility: visible; }
     </style>
     
-    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/lomake.css">
     <link rel="stylesheet" href="Css/header.css">
 
     <script defer src="Scripts/layout.js"></script>
@@ -27,6 +27,76 @@
 <body>
     <div id="header"></div>
 
+    <main class="lomake">
+        <div class="container">
+            <div class="field">
+                <h2>Etunimi</h2>
+                <input type="text">
+            </div>
+            <div class="field">
+                <h2>Sukunimi</h2>
+                <input type="text">
+            </div>
+            <div class="field">
+                <h2>Puhelinumero</h2>
+                <input type="tel">
+            </div>
+
+            <div class="field">
+                <h2>Sähköposti</h2>
+                <input type="text">
+            </div>
+            <div class="field">
+                <h2>Laitetyyppi</h2>
+                <select name="laitetyyppi" id="laitetyyppi">
+                    <option value="puhelin">Mobiililaite</option>
+                    <option value="läppäri">Läppäri</option>
+                    <option value="pelikonsoli">Pelikonsoli</option>
+                    <option value="muu">Muu</option>
+                </select>
+            </div>
+            <div class="field">
+                <h2>Merkki ja malli</h2>
+                <input type="text">
+            </div>
+            <div class="field">
+                <h2>Vika</h2>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <h2>Toimitustapa</h2>
+                <div class="radio">
+                    <b>PaikanPäältä</b>
+                    <input type="radio" name="paikanPäällä" id="">
+                    <b>Postitse</b>
+                    <input type="radio" name="postitse" id="">
+                </div>
+            </div>
+
+            <div class="field">
+                <h2>Tietosuoja</h2>
+                <div class="radio">
+                    <b>Hyväksyn tietosuojaselosteen</b>
+                    <input type="checkbox" name="tietosuojaseloste" id="">
+                </div>
+            </div>
+
+            <div class="field">
+                <h2>Lisätiedot</h2>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <h2>Lähetä</h2>
+                <button>Vahvista</button>
+            </div>
+
+
+        </div>
+
+        </div>
+    </main>
 
     <div id="footer"></div>
 </body>
