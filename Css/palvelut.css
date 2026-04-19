@@ -48,6 +48,23 @@
 
 .services .card .container {
     background-color: var(--accent-green);
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    max-height: 140px;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-bottom: -10px;
+    padding: 8px 0;
+    overflow: hidden;
+}
+
+.card .container .icon {
+    max-height: 70px;
+    width: auto;
+    margin: 0 10px;
 }
 
 .services .card img[src*="CellPhone.png"] {
