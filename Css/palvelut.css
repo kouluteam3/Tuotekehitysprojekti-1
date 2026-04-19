@@ -1,25 +1,19 @@
 @import './main.css';
 
-/* Services page specific styles */
-
-/* Hero section for services page */
 .hero.services-hero {
     background-color: var(--dark-bg);
 }
 
-/* Hero text styling */
 .services-hero .hero-text {
     max-width: 50%;
 }
 
-/* Hero image styling */
 .services-hero .hero-image img {
     scale: 150%;
     border-radius: 8px;
     margin-right: 150px;
 }
 
-/* Card styling for services page */
 .card .container {
     background-color: var(--accent-green);
 }
