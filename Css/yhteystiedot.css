@@ -1,0 +1,34 @@
+@import './main.css';
+
+.yhteystiedot .hero {
+    gap: 30px;
+    padding: 30px;
+
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-height: none;
+}
+
+.yhteystiedot .container {
+    flex: 2;
+
+    max-width: none;
+
+    padding: 30px;
+    margin: auto;
+
+    text-align: start;
+    background: color-mix(in srgb, var(--dark-bg) 80%, transparent);
+    border-radius: 5px;
+}
+
+.yhteystiedot ol {
+    padding-left:  1rem;
+}
+
+.yhteystiedot iframe {
+    flex: 1;
+
+    border-radius: 5px;
+    height: auto;
+}
