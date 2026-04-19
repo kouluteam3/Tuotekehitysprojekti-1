@@ -46,7 +46,6 @@
     min-height: 100%
 }
 
-/* Card styling for services page */
 .services .card .container {
     background-color: var(--accent-green);
 }
