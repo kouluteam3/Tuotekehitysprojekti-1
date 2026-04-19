@@ -1,5 +1,7 @@
 @import './main.css';
 
+/* ----- Header start ----- */
+
 header {
     display: flex;
     flex-flow: nowrap;
@@ -30,6 +32,16 @@ header img {
     width: auto; 
     max-width: 150px; 
     max-height: 150px;
+}
+
+/* ----- Footer start ----- */
+
+footer {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 footer b, footer p {
