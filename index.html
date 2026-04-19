@@ -18,47 +18,50 @@
         body.loaded { visibility: visible; }
     </style>
     
-    <link rel="stylesheet" href="Css/main.css">
     <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/index.css">
 
     <script defer src="Scripts/layout.js"></script>
 </head>
 <body>
-    <div id="header"></div></iframe>
+    <div id="header"></div>
     <main>
         <section class="hero">
             <div class="container">
                 <div class ="hero-content">
                     <div class="hero-text">
                         <h1>Hajosiko puhelimesi tai muu laite?</h1>
-                        <p>Korjaamme laitteesi edullisesti ja luotettavasti.</p>
-                        <div style="margin-top: 20px;">
-                            <button onclick="window.location='../Pages/lomake.html'" style="height: 50px;">Varaa huolto</button>
-                            <button onclick="window.location='../Pages/palvelut.html'" style="background-color: var(--dark-bg); margin-left: 10px; height: 50px;">Katso hinnasto</button>
+                        <p>Me korjaamme puhelimet, läppärit ja konsolit ammattitaidolla. Edulliset hinnat ja nopea palvelu.</p>
+                        <div>
+                            <button onclick="window.location='Pages/lomake.html'">Varaa huolto</button>
+                            <button onclick="window.location='Pages/palvelut.html'">Katso palvelut</button>
                         </div>
                     </div>
-                    <div class="hero-image" style="position: relative; z-index: 20;">
+                    <div class="hero-image">
                         <img src="Resources/Images/CellPhone.png" alt="Rikkinäinen puhelin">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container" style="padding: 60px 0;">
-            <h2 style="color: var(--light-tan); margin-bottom: 40px;">Luotettavat huollot</h2>
-        
+        <section class="container features-section">
+            <h2>Miksi valita meidät?</h2>
+            <p>Tarjoamme luotettavia korjauspalveluja kaikille laitteille. Asiantunteva henkilökunta ja laadukkaat varaosat takaavat parhaan tuloksen.</p>
 
             <div class="card-grid">
                 <div>
                     <div><img src="Resources/Images/ShieldIcon.png" alt="Shield"></div>
-                    <p><strong>Takuu 12kk</strong></p>
+                    <p><strong>12 kuukauden takuu</strong></p>
+                    <p>Kaikille korjauksillemme.</p>
                 </div>
                 <div>
                     <div><img src="Resources/Images/checked.png" alt="Check"></div>
                     <p><strong>Laadukkaat osat</strong></p>
+                    <p>Käytämme vain sertifioituja varaosia.</p>
                 </div>
                 <div>
                     <div><img src="Resources/Images/clock.png" alt="Clock"></div>
                     <p><strong>Nopea korjaus</strong></p>
+                    <p>Useimmat korjaukset valmiina päivässä.</p>
                 </div>
             </div>
         </section>

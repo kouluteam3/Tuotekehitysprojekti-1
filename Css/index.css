@@ -1,0 +1,15 @@
+@import './main.css';
+
+.features-section {
+    padding: 60px 0;
+}
+
+.features-section h2 {
+    color: var(--light-tan);
+    margin-bottom: 40px;
+}
+
+.features-section > p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
