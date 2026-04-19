@@ -4,7 +4,7 @@
     --primary-green: #6B995D;
     --secondary-green: #9AA373;
     --tan: #CBAC8B;
-    --light_tan: #E2CBB9;
+    --light-tan: #E2CBB9;
     --off-white: #FBE9E9;
     --text-light: #FBE9E9;
     --accent-green: #20453B;
@@ -32,11 +32,11 @@ h2 {
 }
 
 h3 {
-    color: var(--light_tan);
+    color: var(--light-tan);
 }
 
 b {
-    color: var(--light_tan);
+    color: var(--light-tan);
 }
 
 
