@@ -35,16 +35,34 @@ header img {
 }
 
 /* ----- Footer start ----- */
-
 footer {
-    padding: 10px;
-
+    padding: 24px 5%;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    position: fixed;
+    bottom: 0;
 }
 
-footer b, footer p {
-    padding-left: 5px;
-    padding-top: 5px;
+footer img {
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 60px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer b {
+    color: var(--light_tan);
 }
