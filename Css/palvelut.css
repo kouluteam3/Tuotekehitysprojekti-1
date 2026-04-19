@@ -46,6 +46,10 @@
     min-height: 100%
 }
 
+.card-grid {
+    align-items: start;
+}
+
 .services .card .container {
     background-color: var(--accent-green);
     margin-top: auto;
