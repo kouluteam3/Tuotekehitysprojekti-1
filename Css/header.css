@@ -12,7 +12,7 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    flex-flow: nowrap;
+    flex-flow: wrap;
     gap: 7px;
 
     margin: 10px;
@@ -43,6 +43,8 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.08);
     position: fixed;
     bottom: 0;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 footer img {
