@@ -228,7 +228,6 @@ textarea {
     z-index: 20;
 }
 
-
 @media screen and (max-width: 900px) {
     .hero-grid {
         grid-template-columns: 1fr;
@@ -244,6 +243,6 @@ textarea {
     }
     
     .hero {
-        padding: 60px 5%;
+        padding: 3rem 0;
     }
 }

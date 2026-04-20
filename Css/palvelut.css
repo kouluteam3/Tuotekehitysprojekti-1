@@ -86,3 +86,12 @@
     margin-bottom: 10px;
 }
 
+.hero-image img {
+    width: 500%;
+    max-width: 500px;
+    display: block;
+    transform: translateY(3px);
+    filter: drop-shadow(-10px 15px 15px rgba(0,0,0,0.15));
+}
+
+
