@@ -96,3 +96,19 @@
 .card {
     background-color: rgba(255, 255, 255, 0.08);
 }
+
+.wide {
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 900px) {
+
+    .component-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .wide {
+        grid-column: span 1;
+    }
+
+}
