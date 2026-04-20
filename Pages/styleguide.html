@@ -45,6 +45,71 @@
                 <p>Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp. This version contains the complete 897 character set, which includes the standard ISO Latin 1, Latin CE, Greek and Cyrillic character sets. Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms.</p>
             </div>
         </section>
+
+        <section class="typography">
+            <h2>Typografia</h2>
+            <div class="typography-sample">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.</p>
+            </div>
+        </section>
+
+        <section class="components">
+            <h2>Komponentit</h2>
+            <div class="component-showcase">
+                <div class="card">
+                    <h3>Button ja Form field</h3>
+                    <p>Käytä buttonia toiminnon suorittamiseen, kuten lomakkeen lähettämiseen. Form fieldit kuten input ja select käytetään käyttäjän syötteen keräämiseen lomakkeissa.</p>
+                    <button class="btn-primary">Lähetä</button>
+                    <input type="text" placeholder="Nimi">
+                    <select name="laitetyyppi" id="laitetyyppi">
+                        <option value="puhelin">Mobiililaite</option>
+                        <option value="läppäri">Läppäri</option>
+                        <option value="pelikonsoli">Pelikonsoli</option>
+                        <option value="muu">Muu</option>
+                    </select>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Header</h3>
+                    <p>Header sisältää yrityksen logon ja navigointilinkit sivuston eri osioihin. Sijoita se sivun yläosaan helpottamaan käyttäjän navigointia.</p>
+                    <a href="index.html" class="logo">
+                        <img src="Resources/Images/HeaderLogo.png" alt="FixIt logo" style="width: 20%;">
+                    </a>
+
+                    <nav>
+                        <a href="index.html">Etusivu</a>
+                        <a href="Pages/palvelut.html">Palvelut</a>
+                        <a href="Pages/ukk.html">UKK</a>
+                        <a href="Pages/yhteystiedot.html">Yhteystiedot</a>
+                        <a href="Pages/lomake.html">Varaa huolto</a>
+                        <a href="Pages/styleguide.html">Tyyliohje</a>
+
+                        <button onclick="window.location='Pages/lomake.html'">Varaa huolto</button>
+                    </nav>
+                </div>
+                <div class="card">
+                    <h3>Card</h3>
+                    <p>Card-komponentti käytetään sisällön ryhmittelyyn ja esittämiseen. Lisää otsikko ja sisältö kortin sisään erottamaan se muusta sisällöstä.</p>
+                    <div class="card">
+                        <h3>Esimerkki kortti</h3>
+                        <p>Tämä on esimerkki kortista</p>
+                    </div>
+                </div>
+                <div class="card" style="grid-column: span 2;">
+                    <h3>Footer</h3>
+                    <p>Footer sisältää yrityksen logon ja yhteystiedot. Sijoita se sivun alaosaan tarjoamaan käyttäjälle tärkeitä yhteystietoja.</p>
+                    <div class="footer-logo">
+                        <img src="/Resources/Images/HeaderLogo.png" alt="FixIt logo" style="width: 20%;">
+                    </div>
+                    <div class="footer-contact">
+                        <p><b>Sähköpostiosoite:</b> fixit.email@someemail.com</p>
+                        <p><b>Puhelinumero:</b> +358 30 0348590</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <div id="footer"></div>

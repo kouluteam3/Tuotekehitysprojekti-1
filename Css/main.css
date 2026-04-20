@@ -47,6 +47,10 @@ h3 {
     color: var(--light-tan);
 }
 
+p {
+    color: var(--text-light);
+}
+
 b {
     color: var(--light-tan);
 }
