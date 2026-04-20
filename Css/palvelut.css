@@ -1,4 +1,4 @@
-@import './main.css';
+
 
 /* Services page specific styles */
 
@@ -71,16 +71,16 @@
     margin: 0 10px;
 }
 
-.services .card img[src*="CellPhone.png"] {
+.services .card img[src*="CellPhone.webp"] {
     width: 50%;
 }
 
-.services .card img[src*="Laptop.png"] {
+.services .card img[src*="Laptop.webp"] {
     width: 84%;
     margin-right: -20px;
 }
 
-.services .card img[src*="Xbox.png"] {
+.services .card img[src*="Xbox.webp"] {
     width: 51%;
     transform: rotate(-90deg);
     margin-bottom: 10px;
