@@ -46,11 +46,6 @@
     min-height: 100%
 }
 
-.card-grid {
-    align-items: start;
-    padding: 0 20px;        
-}
-
 .services .card .container {
     background-color: var(--accent-green);
     margin-top: auto;
