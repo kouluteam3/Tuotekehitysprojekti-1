@@ -22,7 +22,7 @@
 
 .hero-image img {
     position: relative;
-    width: 200%;
+    width: 150%;
 }
 @media screen and (max-width: 1200px) {
     .features-section {
